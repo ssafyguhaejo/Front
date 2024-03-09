@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="../../css/team/configuration.css" />
+  <script src="../../js/team/configuration.js" defer></script>
+  <body>
+    <div class="container">
+      <div class="header">
+        <label>팀구성</label>
+      </div>
+      <div class="title"><label>팀원 구성 설정</label></div>
+      <div class="content">
+        <div class="total-participant">
+          <label>총 인원 : </label><label id="totalParticipant"></label>
+        </div>
+        <div class="team-count">
+          <label>팀 개수 : </label>
+          <input type="number" name="teamCount" id="teamCount" min="1" value="2" />
+        </div>
+        <div class="leader-selection">
+          <label for="">팀장 선정 방식 :</label>
+          <input type="radio" name="leader" id="leaderNone" value="0" />
+          <label for="leaderNone">없음</label>
+          <input type="radio" name="leader" id="leaderRandom" value="1" />
+          <label for="leaderRandom"> 랜덤</label>
+          <input type="radio" name="leader" id="leaderAppoint" value="2" />
+          <label for="leaderAppoint">지정</label>
+        </div>
+        <div class="leader-list"></div>
+      </div>
+      <div class="footer">
+        <button class="prev-btn">< 이전</button>
+        <button class="create-btn">생성</button>
+      </div>
+    </div>
+  </body>
+</html>
