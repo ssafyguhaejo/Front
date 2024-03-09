@@ -1,0 +1,35 @@
+/* 헤더 스타일 */
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin-top: 0;
+}
+
+/* 팀 목록 스타일 */
+.team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 팀 스타일 */
+.team {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* 팀 이름 스타일 */
+.team-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 팀원 스타일 */
+.team-member {
+    margin-bottom: 5px;
+}
