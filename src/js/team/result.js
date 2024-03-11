@@ -2,6 +2,7 @@
 // LocalStorage에서 팀원 데이터 가져오기
 const teamListData = JSON.parse(localStorage.getItem("teamList")) || [];
 
+console.log(teamListData);
 // 팀원 데이터를 화면에 출력하는 함수
 function renderTeamMembers() {
   const teamListElement = document.getElementById("teamList");
@@ -19,10 +20,10 @@ function renderTeamMembers() {
     teamElement.appendChild(teamNameElement);
 
     // 팀원 목록 추가
-    teamData.members.forEach((member) => {
+    teamData.members.forEach((member, idx) => {
       const memberElement = document.createElement("div");
       memberElement.classList.add("team-member");
-      memberElement.textContent = member;
+      memberElement.textContent = teamData.teamLeader && idx == 0 ? member + "(팀장)" : member;
       teamElement.appendChild(memberElement);
     });
 

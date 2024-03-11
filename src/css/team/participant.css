@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+button {
+  cursor: pointer;
 }
 html,
 body {
@@ -16,7 +20,7 @@ body {
   height: 100px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 5px 0 gray;
+  border-bottom: 1px solid gray;
   padding: 30px;
 }
 .header > label {
@@ -34,10 +38,10 @@ body {
 }
 
 .footer {
-  height: 150px;
+  height: 300px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
 }
 
 .footer > button {
@@ -45,12 +49,17 @@ body {
   border-radius: 0%;
   height: 100px;
   width: 230px;
-  color: whitesmoke;
+  color: white;
   font-size: 50px;
   font-weight: bold;
   border: none;
+  border-radius: 10px;
+  margin: 0 30px;
 }
 
+.footer > button:hover {
+  background-color: #32b1d0;
+}
 .participant-list {
   display: flex;
   flex-direction: row;
@@ -58,11 +67,11 @@ body {
 }
 
 .participant-item {
-  background-color: #f6f7c4;
+  background-color: #7bd3ea;
   height: 90px;
-  width: 340px;
-  margin: 40px;
-  border: 1 solid #f6f7c4;
+  width: 30%;
+  margin: 50px 0;
+  margin-left: 3%;
   border-radius: 30px;
   display: flex;
   justify-content: space-between;
@@ -88,14 +97,15 @@ body {
   font-size: 50px;
 }
 .participant-add-btn {
-  background-color: #f6f7c4;
+  background-color: #7bd3ea;
   border: none;
-  margin: 40px;
   height: 90px;
-  width: 340px;
+  width: 30%;
+  margin: 50px 0;
+  margin-left: 3%;
   border-radius: 30px;
   font-size: 50px;
 }
 .participant-add-btn:hover {
-  background-color: #d8da97;
+  background-color: #32b1d0;
 }

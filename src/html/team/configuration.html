@@ -10,13 +10,11 @@
   <body>
     <div class="container">
       <div class="header">
-        <label>팀구성</label>
+        <label>팀생성</label>
       </div>
       <div class="title"><label>팀원 구성 설정</label></div>
       <div class="content">
-        <div class="total-participant">
-          <label>총 인원 : </label><label id="totalParticipant"></label>
-        </div>
+        <div class="total-participant"><label>총 인원 : </label><label id="totalParticipant"></label></div>
         <div class="team-count">
           <label>팀 개수 : </label>
           <input type="number" name="teamCount" id="teamCount" min="1" value="2" />
@@ -27,8 +25,8 @@
           <label for="leaderNone">없음</label>
           <input type="radio" name="leader" id="leaderRandom" value="1" />
           <label for="leaderRandom"> 랜덤</label>
-          <input type="radio" name="leader" id="leaderAppoint" value="2" />
-          <label for="leaderAppoint">지정</label>
+          <!-- <input type="radio" name="leader" id="leaderAppoint" value="2" />
+          <label for="leaderAppoint">지정</label> -->
         </div>
         <div class="leader-list"></div>
       </div>

@@ -60,14 +60,14 @@ container.addEventListener("click", (e) => {
     if (leaderSelection == -1) return alert("팀장 선정 방식을 선택해주세요.");
     let members = [...participants];
     let teams = [];
-    let teamLeader = leaderSelection > 0 ? true : false;
+    let teamLeader = leaderSelection > 0;
     for (let i = 1; i <= teamCount; i++) {
       let teamName = `Team ${i}`;
       let teamMembers = [];
 
       if (leaderSelection < 2) {
         // 팀장 없음, 랜덤 방식
-        for (let j = 0; j < Math.ceil(participants.length / teamCount); j++) {
+        for (let j = 0; j < Math.ceil(members.length / (teamCount - i)); j++) {
           if (members.length > 0) {
             let randomIndex = Math.floor(Math.random() * members.length);
             teamMembers.push(members[randomIndex].name);
